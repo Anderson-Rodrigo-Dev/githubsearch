@@ -18,6 +18,10 @@ const user = {
     },
     setRepositories (repositories){
         this.repositories = repositories
+    },
+
+    setEvents(activity) {
+        this.events = activity.filter(activity => activity.payload.commits).slice(0, 10)
     }
 }
 
