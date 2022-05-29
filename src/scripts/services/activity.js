@@ -1,9 +1,8 @@
-import {baseUrl} from '../variables.js'
+import { baseUrl } from "../variables.js";
 
 async function getActivity(userName) {
-    const response = await fetch(`${baseUrl}/${userName}/events?`);
-    return await response.json();
+  const response = await fetch(`${baseUrl}/${userName}/events?`);
+  return await response.json();
 }
 
-export {getActivity}
-
+export { getActivity };
